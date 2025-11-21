@@ -10,6 +10,11 @@ export default function Hero() {
     "develop apps",
     "create portfolios",
     "optimize Quality",
+    "improve UX",
+    "enhance visuals",
+    "craft interfaces",
+    "write programmes",
+    "launch products",
   ];
 
   const [index, setIndex] = useState(0);
@@ -18,22 +23,25 @@ export default function Hero() {
 
   // Typing Effect Logic
   useEffect(() => {
-    const timer = setTimeout(() => {
-      if (!reverse) {
-        if (subIndex === words[index].length) {
-          setReverse(true);
-          return;
+    const timer = setTimeout(
+      () => {
+        if (!reverse) {
+          if (subIndex === words[index].length) {
+            setReverse(true);
+            return;
+          }
+          setSubIndex((v) => v + 1);
+        } else {
+          if (subIndex === 0) {
+            setReverse(false);
+            setIndex((prev) => (prev + 1) % words.length);
+            return;
+          }
+          setSubIndex((v) => v - 1);
         }
-        setSubIndex((v) => v + 1);
-      } else {
-        if (subIndex === 0) {
-          setReverse(false);
-          setIndex((prev) => (prev + 1) % words.length);
-          return;
-        }
-        setSubIndex((v) => v - 1);
-      }
-    }, reverse ? 60 : 120);
+      },
+      reverse ? 60 : 120
+    );
 
     return () => clearTimeout(timer);
   }, [subIndex, index, reverse]);
@@ -43,8 +51,7 @@ export default function Hero() {
       <div className="hero-left">
         <h1 className="hero-title">
           Hi, I'm <span className="highlight">Hillary-Prosper Wahua</span>.
-          <br />
-          I{" "}
+          <br />I{" "}
           <span className="typing-text">
             {words[index].substring(0, subIndex)}
           </span>
@@ -58,8 +65,12 @@ export default function Hero() {
         </p>
 
         <div className="hero-btns">
-          <a href="/projects" className="hero-btn primary">View Projects</a>
-          <a href="/contact" className="hero-btn secondary">Hire Me</a>
+          <a href="/projects" className="hero-btn primary">
+            View Projects
+          </a>
+          <a href="/contact" className="hero-btn secondary">
+            Hire Me
+          </a>
         </div>
       </div>
 
