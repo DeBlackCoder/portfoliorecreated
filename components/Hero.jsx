@@ -5,10 +5,10 @@ import "./hero.css";
 
 export default function Hero() {
   const words = [
-    "build fast websites",
+    "build websites",
     "design modern UI",
-    "develop full-stack apps",
-    "create stunning portfolios",
+    "develop apps",
+    "create portfolios",
     "optimize performance",
   ];
 
