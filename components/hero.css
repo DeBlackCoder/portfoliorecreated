@@ -130,6 +130,9 @@
     text-align: center;
     gap: 50px;
     padding-top: 80px;
+    margin-top: 5rem;
+    height: 75vh;
+    width: auto;
   }
 
   .hero-right {
