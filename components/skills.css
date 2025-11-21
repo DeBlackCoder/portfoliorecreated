@@ -1,0 +1,128 @@
+.skills-section {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Main Web Skills */
+.skills-main {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.skills-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #7c7b7b;
+}
+
+.skills-desc {
+  font-size: 16px;
+  color: #8f8f8f;
+  margin-bottom: 40px;
+}
+
+/* Skill bars */
+.skills-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.skill-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.skill-name {
+  flex: 1;
+  font-weight: 600;
+  color: #777777;
+}
+
+.skill-bar {
+  flex: 3;
+  height: 12px;
+  background: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: #0070f3;
+  border-radius: 6px;
+  transition: width 1s ease-in-out;
+}
+
+.skill-level {
+  width: 50px;
+  text-align: right;
+  font-weight: 600;
+  color: #0070f3;
+}
+
+/* Other Creative & Tech Skills */
+.skills-other {
+  text-align: left;
+}
+
+.other-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.other-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.other-skill {
+  background: #f0f0f0;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.other-skill:hover {
+  background: #0070f3;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.skill-progress {
+  height: 100%;
+  background: #0070f3;
+  border-radius: 6px;
+  transition: width 2s ease-in-out;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-title {
+    font-size: 28px;
+  }
+
+  .skills-desc {
+    font-size: 15px;
+  }
+
+  .skill-level {
+    width: 40px;
+    font-size: 14px;
+  }
+
+  .other-skill {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+}

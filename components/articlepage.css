@@ -1,0 +1,62 @@
+/* Articles Page Styles */
+.articles-page {
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  margin-top: 2.5rem;
+}
+
+.articles-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.articles-page-section {
+  margin-bottom: 80px;
+}
+
+.articles-page-section-title {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #041369;
+  display: inline-block;
+  text-align: center;
+  margin-left: 40rem;
+}
+
+.articles-page-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .articles-page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .articles-page-section-title {
+    font-size: 24px;
+  }
+
+  .articles-page-container {
+    padding: 40px 20px;
+  }
+
+  .articles-page-section {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .articles-page-section-title {
+    font-size: 20px;
+  }
+}
