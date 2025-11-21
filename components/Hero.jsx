@@ -9,7 +9,7 @@ export default function Hero() {
     "design modern UI",
     "develop apps",
     "create portfolios",
-    "optimize performance",
+    "optimize Quality",
   ];
 
   const [index, setIndex] = useState(0);
