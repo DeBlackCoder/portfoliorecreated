@@ -27,6 +27,26 @@
   height: 100%;
 }
 
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;   /* force full width */
+  height: 100vh;  /* force full height */
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.hero-bg canvas,
+.hero-bg video,
+.hero-bg > * {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+
 
 /* ========== LEFT SIDE (TEXT) ========== */
 .hero-left {
