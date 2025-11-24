@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import "./hero.css";
+import LiquidEther from "./LiquidEther";
 
 export default function Hero() {
   const words = [
@@ -23,35 +24,39 @@ export default function Hero() {
 
   // Typing Effect Logic
   useEffect(() => {
-    const timer = setTimeout(
-      () => {
-        if (!reverse) {
-          if (subIndex === words[index].length) {
-            setReverse(true);
-            return;
-          }
-          setSubIndex((v) => v + 1);
-        } else {
-          if (subIndex === 0) {
-            setReverse(false);
-            setIndex((prev) => (prev + 1) % words.length);
-            return;
-          }
-          setSubIndex((v) => v - 1);
+    const timer = setTimeout(() => {
+      if (!reverse) {
+        if (subIndex === words[index].length) {
+          setReverse(true);
+          return;
         }
-      },
-      reverse ? 60 : 120
-    );
+        setSubIndex((v) => v + 1);
+      } else {
+        if (subIndex === 0) {
+          setReverse(false);
+          setIndex((prev) => (prev + 1) % words.length);
+          return;
+        }
+        setSubIndex((v) => v - 1);
+      }
+    }, reverse ? 80 : 150);
 
     return () => clearTimeout(timer);
   }, [subIndex, index, reverse]);
 
   return (
     <section className="hero">
+      {/* Background layer */}
+      <div className="hero-bg">
+        <LiquidEther />
+      </div>
+
+      {/* LEFT CONTENT */}
       <div className="hero-left">
         <h1 className="hero-title">
           Hi, I'm <span className="highlight">Hillary-Prosper Wahua</span>.
-          <br />I{" "}
+          <br />
+          I{" "}
           <span className="typing-text">
             {words[index].substring(0, subIndex)}
           </span>
@@ -74,9 +79,10 @@ export default function Hero() {
         </div>
       </div>
 
+      {/* RIGHT IMAGE */}
       <div className="hero-right">
         <div className="hero-img-container">
-          <img src="\images\prosper.png" alt="Owner" className="hero-img" />
+          <img src="/images/prosper.png" alt="Owner" className="hero-img" />
         </div>
       </div>
     </section>

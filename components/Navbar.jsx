@@ -19,6 +19,7 @@ export default function Navbar() {
       <nav className="nav-links">
         <Link href="/">Home</Link>
         <Link href="/services">Services</Link>
+        <Link href="/projects">Projects</Link>
         <Link href="/articlespage">Articles</Link>
         <Link href="/contact">Contact</Link>
       </nav>
@@ -34,6 +35,7 @@ export default function Navbar() {
       <div className={`mobile-menu ${menuOpen ? "show" : ""}`}>
         <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link>
         <Link href="/services" onClick={() => setMenuOpen(false)}>Services</Link>
+        <Link href="/projects" onClick={() => setMenuOpen(false)}>Projects</Link>
         <Link href="/articlespage" onClick={() => setMenuOpen(false)}>Articles</Link>
         <Link href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
       </div>
