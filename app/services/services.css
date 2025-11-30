@@ -144,4 +144,8 @@
   .services-grid {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .services-hero h1{
+    font-size: 25px;
+  }
 }
