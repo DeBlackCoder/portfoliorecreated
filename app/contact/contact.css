@@ -271,4 +271,8 @@
     /* padding: 40px 4%; */
     gap: 2rem;
   }
+
+  .contact-form-pro {
+    width: 100%;
+  }
 }
