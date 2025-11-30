@@ -168,26 +168,21 @@
   display: flex;
 }
 
-/* Medium screens: Tablets */
-@media screen and (max-width: 1024px) {
+
+
+/* Media Queries for Responsiveness */
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
   .contact-page-pro {
-    margin: 5rem;
     flex-direction: column;
-    width: 90%;
-    gap: 4rem;
-    margin-left: -.6rem;
-    padding: 3rem;
+    padding: 60px 4%;
+    gap: 3rem;
   }
-  
 
   .contact-section-pro {
-    width: 100%;
+    width: 80%;
     gap: 40px;
-  }
-
-  .contact-form-pro {
-    width: 100%;
-    gap: 2rem;
   }
 
   .contact-form-pro button {
@@ -203,13 +198,14 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 15px;
-    display: none;
   }
 }
 
-/* Small screens: Mobile devices */
-@media screen and (max-width: 768px) {
+/* Small screens (phones) */
+@media (max-width: 768px) {
+    .contact-page-pro {
+        margin-top: 5rem;
+    }
   .contact-hero-pro h1 {
     font-size: 2.2rem;
   }
@@ -218,47 +214,37 @@
     font-size: 1rem;
   }
 
-  .contact-form-pro {
-    gap: 14px;
-    margin-left: -1.5rem;
+  .contact-section-pro {
+    width: 100%;
+    gap: 30px;
   }
 
   .input-group input,
   .input-group textarea {
     padding: 12px 12px;
-    font-size: 0.95rem;
   }
 
-  .input-group label {
-    top: 25%;
-    font-size: 0.9rem;
-  }
-
-  .input-group input:focus + label,
-  .input-group input:not(:placeholder-shown) + label,
-  .input-group textarea:focus + label,
-  .input-group textarea:not(:placeholder-shown) + label {
-    font-size: 0.75rem;
-    top: -7px;
+  .contact-form-pro {
+    margin-top: -7rem;
+    width: 93%;
   }
 
   .contact-form-pro button {
-    padding: 14px;
-    font-size: 0.95rem;
-    margin-left: 0.8rem;
-  }
-
-  .contact-cards-pro {
-    gap: 12px;
+    padding: 10px;
+    margin-left: .7rem;
   }
 
   .contact-cards-pro .card {
-    padding: 12px 16px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    display: none;
   }
 }
 
-/* Extra small screens: Very small mobile devices */
-@media screen and (max-width: 480px) {
+/* Extra small screens (very small phones) */
+@media (max-width: 480px) {
   .contact-hero-pro h1 {
     font-size: 1.8rem;
   }
@@ -268,11 +254,10 @@
   }
 
   .contact-page-pro {
-    /* padding: 40px 4%; */
-    gap: 2rem;
+    padding: 40px 3%;
   }
 
-  .contact-form-pro {
-    width: 100%;
+  .contact-cards-pro {
+    gap: 15px;
   }
 }
