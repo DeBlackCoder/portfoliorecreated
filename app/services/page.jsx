@@ -97,11 +97,7 @@ export default function ServicesPage() {
 
       <WhyWorkWithMe />
 
-      <div className="service-contact">
-        <button>
-            Contact Me
-        </button>
-      </div>
+    
     </div>
   );
 }
