@@ -1,50 +1,6 @@
-.liquid-ether-container {
+.floating-lines-container {
+  width: 100%;
+  height: 100%;
   position: relative;
-  width: 100%;
-  height: 100%;
   overflow: hidden;
-  background: black; /* dark background behind the fluid */
-}
-.liquid-ether-container canvas {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-
-.liquid-ether-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.liquid-ether-canvas canvas {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.liquid-ether-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-@media (max-width: 768px) {
-  .liquid-ether-container {
-    height: 300px;
-  }
-}
-
-@media (max-width: 480px) {
-  .liquid-ether-container {
-    height: 200px;
-  }
 }
