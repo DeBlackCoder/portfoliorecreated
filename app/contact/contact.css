@@ -42,10 +42,10 @@
 
 /* Contact Form */
 .contact-form-pro {
-  flex: 1 1 450px;
   display: flex;
   flex-direction: column;
   gap: 18px;
+  width: 100%;
 }
 
 .input-group {
@@ -58,7 +58,7 @@
   padding: 16px 16px;
   border-radius: 12px;
   border: 1px solid #333;
-  background-color: #1c1c1c;
+  background-color: var(--slider-bg);
   color: #fff;
   font-size: 1rem;
   outline: none;
@@ -130,7 +130,7 @@
 
 /* Contact Info Cards */
 .contact-cards-pro {
-    margin-top: 4rem;
+  margin-top: 4rem;
   flex: 1 1 300px;
   display: flex;
   /* flex-direction: column; */
@@ -166,25 +166,28 @@
 
 .contact-cards-pro .card div {
   display: flex;
-
 }
-
-
 
 /* Medium screens: Tablets */
 @media screen and (max-width: 1024px) {
-    .contact-page-pro{
-        margin: 5rem;
-    }
   .contact-page-pro {
+    margin: 5rem;
     flex-direction: column;
-    padding: 60px 5%;
+    width: 90%;
     gap: 4rem;
+    margin-left: -.6rem;
+    padding: 3rem;
   }
+  
 
   .contact-section-pro {
     width: 100%;
     gap: 40px;
+  }
+
+  .contact-form-pro {
+    width: 100%;
+    gap: 2rem;
   }
 
   .contact-form-pro button {
@@ -201,6 +204,7 @@
     align-items: center;
     width: 100%;
     gap: 15px;
+    display: none;
   }
 }
 
@@ -241,7 +245,7 @@
   .contact-form-pro button {
     padding: 14px;
     font-size: 0.95rem;
-    margin-left: .8rem;
+    margin-left: 0.8rem;
   }
 
   .contact-cards-pro {
@@ -264,7 +268,7 @@
   }
 
   .contact-page-pro {
-    padding: 40px 4%;
+    /* padding: 40px 4%; */
     gap: 2rem;
   }
 }

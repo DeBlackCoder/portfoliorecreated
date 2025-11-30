@@ -203,6 +203,7 @@ body {
   opacity: 0;
   transition: transform 0.35s ease, opacity 0.35s ease;
   z-index: 999;
+  margin-top: 1.5rem;
 }
 
 .mobile-menu.show {
