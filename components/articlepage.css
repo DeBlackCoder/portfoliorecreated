@@ -1,8 +1,8 @@
 /* Articles Page Styles */
 .articles-page {
   min-height: 100vh;
-  background: #000;
-  color: #fff;
+  background: var(--bg-color);
+  color: var(--text-color);
   margin-top: 2.5rem;
 }
 

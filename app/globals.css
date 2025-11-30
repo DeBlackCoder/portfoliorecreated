@@ -8,4 +8,10 @@ body {
   background-color: black;
   color: #333;
   line-height: 1.6;
+  cursor: pointer;
+}
+
+/* Smooth scrolling for all anchor links */
+html {
+  scroll-behavior: smooth;
 }

@@ -1,12 +1,11 @@
 .hero {
   position: relative;
-  width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 40px 20px;
-  max-width: 1500px;
+  max-width: 100%     ;
   margin: auto;
   gap: 40px;
   overflow: hidden;
@@ -48,10 +47,6 @@
 
 
 
-/* ========== LEFT SIDE (TEXT) ========== */
-.hero-left {
-  flex: 1;
-}
 
 .hero-title {
   font-size: 48px;
@@ -197,12 +192,21 @@
   }
 }
 @media (max-width: 500px) {
+  .hero {
+    padding: 30px 15px;
+    gap: 30px;
+  }
   .hero-title {
-    font-size: 28px;
+    margin-top: -10rem;
+    font-size: 20px;
   }
 
   .hero-img-container {
     width: 220px;
     height: 220px;
+  }
+
+  .typing-text {
+    width: 100%;
   }
 }

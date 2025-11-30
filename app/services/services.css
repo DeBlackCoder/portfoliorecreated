@@ -1,0 +1,147 @@
+/* ---- GLOBAL PAGE LAYOUT ---- */
+.services-page {
+  width: 100%;
+  padding: 5rem 0 5rem 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* ---- HERO SECTION ---- */
+.services-hero {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 70px;
+}
+
+.services-hero h1 {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.services-hero p {
+  max-width: 650px;
+  margin: 20px auto 0;
+  font-size: 1.15rem;
+  opacity: 0.75;
+}
+
+/* ---- GRID ---- */
+.services-grid {
+  display: grid;
+  justify-content: center; /* centers the entire grid */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+
+/* ---- SERVICE CARD ---- */
+.service-card {
+  background: var(--toggle-bg);
+  padding: 30px;
+  border-radius: 18px;
+  border: 1px solid #ececec;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+  color: black;
+}
+
+.service-card:hover {
+  box-shadow: 0px 14px 35px rgba(0,0,0,0.09);
+}
+
+.service-icon {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.service-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  opacity: 0.75;
+  margin-bottom: 20px;
+  line-height: 1.55;
+}
+
+.service-btn {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+}
+
+/* ---- MASTER FEATURES ---- */
+.master-features {
+  margin-top: 110px;
+  margin-bottom: 120px;
+  text-align: center;
+}
+
+.master-features h2 {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.master-features ul {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.master-features li {
+  font-size: 1.05rem;
+  margin-bottom: 14px;
+  display: flex;
+  gap: 10px;
+  opacity: 0.85;
+}
+
+.master-features li::before {
+  content: "✔";
+  color: #111;
+  font-weight: 600;
+}
+
+.service-contact {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+  
+}
+
+.service-contact button {
+    font-size: 1.5rem;
+     background-color: var(--text-color);
+    border: none;
+    color: var(--bg-color);
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.service-contact button:hover {
+  transform: translateY(-4px); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+}
+
+
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

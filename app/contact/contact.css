@@ -1,0 +1,270 @@
+/* Overall Page */
+.contact-page-pro {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 80px 6%;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+}
+
+/* Hero Section */
+.contact-hero-pro {
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 60px;
+}
+
+.contact-hero-pro h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.contact-hero-pro p {
+  font-size: 1.1rem;
+  opacity: 0.75;
+  line-height: 1.6;
+}
+
+/* Form & Cards Layout */
+.contact-section-pro {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  width: 40%;
+  max-width: 1200px;
+}
+
+/* Contact Form */
+.contact-form-pro {
+  flex: 1 1 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 16px 16px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  background-color: #1c1c1c;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #fff;
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
+}
+
+.input-group textarea {
+  min-height: 140px;
+  resize: none;
+}
+
+.input-group label {
+  position: absolute;
+  top: 20%;
+  left: 16px;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 0.95rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+  top: -9px;
+  left: 12px;
+  font-size: 0.8rem;
+  color: #fff;
+  background: #111;
+  padding: 0 4px;
+}
+
+/* Button */
+.contact-form-pro button {
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #fff;
+  color: #111;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-left: 1.5rem;
+}
+
+.contact-form-pro button:hover {
+  background-color: #333;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Subtext below form */
+.form-subtext {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  margin-top: 6px;
+  margin-left: 6rem;
+}
+
+/* Contact Info Cards */
+.contact-cards-pro {
+    margin-top: 4rem;
+  flex: 1 1 300px;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 20px;
+  justify-content: space-around;
+  width: fit-content;
+}
+
+.contact-cards-pro .card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border-radius: 14px;
+  background-color: #1c1c1c;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #333;
+  color: white;
+}
+
+.contact-cards-pro .card:hover {
+  transform: translateY(-3px);
+  scale: 1.03;
+  border-color: #fff;
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+}
+
+.contact-cards-pro .card svg {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.contact-cards-pro .card div {
+  display: flex;
+
+}
+
+
+
+/* Medium screens: Tablets */
+@media screen and (max-width: 1024px) {
+    .contact-page-pro{
+        margin: 5rem;
+    }
+  .contact-page-pro {
+    flex-direction: column;
+    padding: 60px 5%;
+    gap: 4rem;
+  }
+
+  .contact-section-pro {
+    width: 100%;
+    gap: 40px;
+  }
+
+  .contact-form-pro button {
+    margin-left: 0;
+  }
+
+  .form-subtext {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .contact-cards-pro {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+  }
+}
+
+/* Small screens: Mobile devices */
+@media screen and (max-width: 768px) {
+  .contact-hero-pro h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-hero-pro p {
+    font-size: 1rem;
+  }
+
+  .contact-form-pro {
+    gap: 14px;
+    margin-left: -1.5rem;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    padding: 12px 12px;
+    font-size: 0.95rem;
+  }
+
+  .input-group label {
+    top: 25%;
+    font-size: 0.9rem;
+  }
+
+  .input-group input:focus + label,
+  .input-group input:not(:placeholder-shown) + label,
+  .input-group textarea:focus + label,
+  .input-group textarea:not(:placeholder-shown) + label {
+    font-size: 0.75rem;
+    top: -7px;
+  }
+
+  .contact-form-pro button {
+    padding: 14px;
+    font-size: 0.95rem;
+    margin-left: .8rem;
+  }
+
+  .contact-cards-pro {
+    gap: 12px;
+  }
+
+  .contact-cards-pro .card {
+    padding: 12px 16px;
+  }
+}
+
+/* Extra small screens: Very small mobile devices */
+@media screen and (max-width: 480px) {
+  .contact-hero-pro h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-hero-pro p {
+    font-size: 0.95rem;
+  }
+
+  .contact-page-pro {
+    padding: 40px 4%;
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,80 @@
+/* Define color variables */
+:root {
+  /* Light mode colors */
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --toggle-bg: #ffffff;
+  --slider-bg: rgb(0, 0, 0);
+  --slider-color: #ffffff;
+  --black: #e0e0e0;
+
+  /* Dark mode colors */
+  --bg-color-dark: rgb(0, 0, 0);
+  --text-color-dark: #ffffff;
+  --toggle-bg-dark: #8d8d8d;
+  --slider-bg-dark: #3d3c3c;
+  --slider-color-dark: #c4c2c2;
+  --black-dark: white;
+}
+
+/* General body colors */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.darkmode {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+.darkmode {
+  --bg-color: var(--bg-color-dark);
+  --text-color: var(--text-color-dark);
+  --toggle-bg: var(--toggle-bg-dark);
+  --slider-bg: var(--slider-bg-dark);
+  --slider-color: var(--slider-color-dark);
+  --black: var(--black-dark);
+}
+
+/* Toggle container */
+.toggle-container {
+  width: 60px;
+  height: 30px;
+  background-color: var(--toggle-bg);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+/* Dark background for toggle */
+.toggle-container.dark {
+  background-color: var(--toggle-bg-dark);
+}
+
+/* Slider */
+.toggle-slider {
+  width: 24px;
+  height: 24px;
+  background-color: var(--slider-bg);
+  border-radius: 50%;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  transition: left 0.3s, background-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--slider-color);
+}
+
+/* Slider in dark mode */
+.toggle-slider.dark {
+  left: 33px;
+  background-color: var(--slider-bg-dark);
+  color: var(--slider-color-dark);
+}

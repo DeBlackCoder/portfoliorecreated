@@ -1,0 +1,78 @@
+.why-section {
+  padding: 80px 0;
+  color: var(--text-color);
+}
+
+.why-header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 50px;
+}
+
+.why-header h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.why-header h2 span {
+  color: var(--accent-color);
+}
+
+.why-header p {
+  margin-top: 10px;
+  opacity: 0.8;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+/* GRID */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 26px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.why-card {
+  background: var(--card-bg);
+  padding: 28px 24px;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  transition: .3s ease;
+  text-align: left;
+  box-shadow: var(--shadow-sm);
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.why-icon svg {
+  height: 26px;
+  width: 26px;
+  color: var(--accent-color);
+  margin-bottom: 12px;
+}
+
+.why-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.why-card p {
+  opacity: 0.85;
+  line-height: 1.55;
+  font-size: 0.98rem;
+}
+
+/* Shadows */
+:root {
+  --shadow-md: 0px 8px 26px rgba(0,0,0,0.15);
+}
+:root {
+  --shadow-sm: 0px 4px 15px rgba(0,0,0,0.1);
+}

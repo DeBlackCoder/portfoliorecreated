@@ -1,0 +1,18 @@
+.projects-container {
+  padding: 60px 40px;
+  margin-top: 3rem;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 30px 20px;
+  }
+}
