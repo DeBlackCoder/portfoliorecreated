@@ -254,7 +254,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;               /* navbar height */
+  height: 80px;               /* navbar height */
   padding: 0;                 /* remove padding from container */
   background: rgba(0,0,0,0.4);
   backdrop-filter: blur(10px);
@@ -266,15 +266,14 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 0 20px;          /* padding inside black area */
-  background-color: black;   /* solid black */
-  height: 100%;  
-  width: 50%;            /* full height of navbar */
-  z-index: 1001;             /* above the semi-transparent navbar */
+  padding: 0 20px;       
+  background-color: black;  
+  width: 50%;           
+  z-index: 1001;             
 }
 
   .logo-left .nav-logo img {
-  height: 60px;              /* slightly smaller logo */
+  height: 45px;              
   max-width: 100%;
   margin-left: 0rem;
 }
@@ -291,7 +290,7 @@ body {
 @media (max-width: 480px) {
 
   .desktop-toggle {
-    display: none; /* hide desktop toggle */
+    display: none; 
   }
 .menu-icon {
     margin-right: 2rem;
