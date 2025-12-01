@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
 import "./skills.css";
+import RecentProjects from "./RecentProject";
 
 export default function Skills() {
   const webSkills = [
@@ -97,6 +98,8 @@ export default function Skills() {
           ))}
         </div>
       </div>
+
+      <RecentProjects />
     </section>
   );
 }

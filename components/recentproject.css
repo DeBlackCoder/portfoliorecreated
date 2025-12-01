@@ -1,0 +1,95 @@
+.recent-section {
+  width: 90%;
+  padding: 80px 6%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  text-align: center;
+  align-items: center;
+}
+
+.recent-header {
+  margin-bottom: 40px;
+  width: fit-content;
+}
+
+.recent-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.view-all-btn {
+  padding: 8px 18px;
+  border: 1px solid #111;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: 0.3s ease;
+  width: fit-content;
+  margin-top: 2rem;
+}
+
+.view-all-btn:hover {
+  background: #111;
+  color: white;
+}
+
+.recent-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+
+/* Tablet and above */
+@media (min-width: 768px) {
+  .recent-section {
+    padding: 60px 4%;
+  }
+
+  .recent-header {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .recent-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .view-all-btn {
+    font-size: 1rem;
+    padding: 8px 18px;
+    margin-top: 3rem;
+  }
+
+
+}
+
+
+@media (min-width: 568px) {
+  .recent-section {
+    padding: 60px 4%;
+  }
+
+  .recent-header {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .recent-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .view-all-btn {
+    font-size: 1rem;
+    padding: 8px 18px;
+    margin-top: 3rem;
+  }
+
+  
+}
