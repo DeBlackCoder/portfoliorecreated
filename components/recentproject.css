@@ -48,6 +48,7 @@
 @media (min-width: 768px) {
   .recent-section {
     padding: 60px 4%;
+    width: 80%;
   }
 
   .recent-header {
@@ -73,6 +74,7 @@
 @media (min-width: 568px) {
   .recent-section {
     padding: 60px 4%;
+    width: 80%;
   }
 
   .recent-header {
