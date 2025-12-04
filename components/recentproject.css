@@ -41,8 +41,8 @@
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+  width: 115%;
 }
-
 
 /* Tablet and above */
 @media (min-width: 768px) {
@@ -66,10 +66,7 @@
     padding: 8px 18px;
     margin-top: 3rem;
   }
-
-
 }
-
 
 @media (min-width: 568px) {
   .recent-section {
@@ -92,6 +89,4 @@
     padding: 8px 18px;
     margin-top: 3rem;
   }
-
-  
 }
