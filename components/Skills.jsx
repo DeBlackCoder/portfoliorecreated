@@ -38,7 +38,7 @@ export default function Skills() {
           setHasAnimated(true);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0}
     );
 
     if (sectionRef.current) observer.observe(sectionRef.current);
