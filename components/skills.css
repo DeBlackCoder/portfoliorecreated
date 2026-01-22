@@ -129,3 +129,29 @@
     padding: 5px 10px;
   }
 }
+
+@media (max-width: 480px) {
+  .skills-section {
+    padding: 60px 15px;
+    width: 100%;
+  } 
+  .skills-title {
+    font-size: 24px;
+  }
+
+  .skills-desc {
+    font-size: 14px;
+  }
+
+  .skill-level {
+    width: 35px;
+    font-size: 13px;
+  }
+
+  .other-skill {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+
+
