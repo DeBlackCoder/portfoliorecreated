@@ -7,6 +7,7 @@
   --slider-bg: rgb(0, 0, 0);
   --slider-color: #ffffff;
   --black: #e0e0e0;
+  --blackto: black;
 
   /* Dark mode colors */
   --bg-color-dark: rgb(0, 0, 0);
@@ -15,6 +16,7 @@
   --slider-bg-dark: #3d3c3c;
   --slider-color-dark: #c4c2c2;
   --black-dark: white;
+  --blackfrom:white;
 }
 
 /* General body colors */
@@ -36,6 +38,7 @@ body.darkmode {
   --slider-bg: var(--slider-bg-dark);
   --slider-color: var(--slider-color-dark);
   --black: var(--black-dark);
+  --blackto: var(--blackfrom);
 }
 
 /* Toggle container */

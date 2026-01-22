@@ -2,12 +2,15 @@
   padding: 100px 20px;
   max-width: 1200px;
   margin: auto;
+  border-bottom: 1px solid var(--slider-bg);
 }
 
 /* Main Web Skills */
 .skills-main {
   text-align: left;
   margin-bottom: 60px;
+   border-bottom: 1px solid var(--slider-bg);
+   padding: 5rem;
 }
 
 .skills-title {

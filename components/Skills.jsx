@@ -2,6 +2,7 @@
 import { useEffect, useState, useRef } from "react";
 import "./skills.css";
 import RecentProjects from "./RecentProject";
+import RecentArticles from "./RecentArticles"
 
 export default function Skills() {
   const webSkills = [
@@ -100,6 +101,7 @@ export default function Skills() {
       </div>
 
       <RecentProjects />
+      <RecentArticles />
     </section>
   );
 }

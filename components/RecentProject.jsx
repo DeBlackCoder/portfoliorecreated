@@ -11,7 +11,6 @@ export default function RecentProjects() {
     <section className="recent-section">
       <div className="recent-header">
         <h2>Recent Projects</h2>
-        
       </div>
 
       <div className="recent-grid">
@@ -25,8 +24,8 @@ export default function RecentProjects() {
       </div>
 
       <a href="/projects" className="view-all-btn">
-          View All Projects →
-        </a>
+        View All Projects →
+      </a>
     </section>
   );
 }
